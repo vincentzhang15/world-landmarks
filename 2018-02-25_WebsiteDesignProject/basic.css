@@ -1,0 +1,505 @@
+/*------------------------------------------ Default Formatting ------------------------------------------*/
+body{
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 'Palatino', sans-serif;
+	background-repeat: no-repeat;
+	background-color: rgba(29, 47, 62, 1);
+}
+h1{
+	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+	font-size: 40px;
+	color: black;
+	text-align: center;
+}
+h2, h3, h4{
+	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 32px;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+p{
+	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 30px;
+	color: black;
+	text-align: left;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	position: relative;
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/*Button Darken*/
+li a:hover {
+	background-color: #111;
+}
+/* Remove underline */
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: underline;
+}
+
+a{
+	color: white;
+}
+
+a.quickfindpagelink{
+	color: black;
+}
+a.quickfindpagelink:link {
+	text-decoration: underline;
+}
+
+a.quickfindpagelink:hover {
+	font-weight:bold;
+}
+
+/*------------------------------------------ Homepage Formatting ------------------------------------------*/
+/*text format starts*/
+/*homepage format of body*/
+body.homepage{
+	/*background image*/
+	background-image: url("Pictures/CNTowerNightView.jpg");
+	/*image filter; slightly darken*/
+	background-blend-mode: hard-light;
+	/*put background image to fixed position*/
+	background-attachment: fixed;
+	/*move with window when resized*/
+	background-size: cover;
+	background-color: rgba(29, 47, 62, 1);
+}
+/*homepage format of heading 1*/
+h1.homepage{
+	font-family: Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 40px;
+	color: white;
+	/*text shadow*/
+	text-shadow: 2px 2px 4px #000000;
+	/*specific text size for home page*/
+	font-size: 550%;
+	/*set position fixed to provided location*/
+    position: fixed;
+	/*move down*/
+    top: 30%;
+	/*increase width rightwards*/
+    width: 99%;
+}
+/*homepage format of paragraph*/
+p.homepage{
+	font-family: Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 24px;
+	color: white;
+	/*replace break tag - pre-formatted by switching lines*/
+	white-space: pre-line;
+	/*align text to center*/
+	text-align: center;
+	/*set position fixed to provided location*/
+	position: fixed;
+	/*move down*/
+	top: 50%;
+	/*increase width rightwards*/
+    width: 99%;
+    line-height: 120%;
+	margin: 0;
+}
+p.homepage span{
+	background-color: rgba(40,46,52, 0.5);
+}
+/*text format ends*/
+/*button format starts*/
+.button {
+	/*set font size*/
+	font-size: 20px;
+	/*set button text color to white*/
+	color: #FFFFFF;
+	/*align button text to center*/
+	text-align: center;
+	/*set background color to transparent light orange*/
+	background-color: rgba(255, 165, 0, 0.7);
+	/*remove border*/
+	border: none;
+	/*smooth border edges*/
+	border-radius: 15px 50px;
+	/*add space between text and border of button*/
+	padding: 10px;
+	/*set button width*/
+	width: 140px;
+	/*set position fixed to provided location*/
+	position: fixed;
+	/*move down*/
+	top: 60%;
+	/*move 50% from the left*/
+	left: 50%;
+	/*move button to location*/
+	transform: translate(-50%, 50%);
+	/*set transition time*/
+	transition: 0.5s;
+	/*change cursor to .cur	if available else change to default*/
+	cursor: url(Cursors/Plane.cur), pointer;
+}
+.button span {
+	/*change position relative to text*/
+	position: relative;
+	/*change transition time*/
+	transition: 0.5s;
+}
+.button span:after {
+	/*display double arrow*/
+	content: '\00bb';
+	position: absolute;
+	/*hide arrow*/
+	opacity: 0;
+	/*move to right*/
+	right: -20px;
+	transition: 0.5s;
+}
+/*move text*/
+.button:hover span {
+	padding-right: 25px;
+}
+/*display double arrow*/
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+img.homepage{
+	/*move down*/
+	top: 90%;
+	/*move 47.2% from the left*/
+	left: 47.2%;
+	position: fixed;
+	color: black;
+}
+p.copyrighthome{
+	color: white;
+	font-size: 15px;
+	/*move down*/
+	top: 94%;
+	/*move -3% from the left*/
+	left: -3%;
+	position: fixed;
+}
+/*------------------------------------------ Landmarks Page Formatting ------------------------------------------*/
+body.world, html.world {
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 'Palatino', sans-serif;
+	color: #777;
+}
+/* used on landmark page */
+.style1{
+	background-color:rgba(40,46,52, 0.5) ;
+	color: white;
+	text-align:center;
+	padding: 5px 10px;
+	text-align: center;
+	display: inline-block;
+}
+/* creates dark bar behind navigation list */
+.style2{
+	z-index: -1;
+	background-color:#404040;
+	color:#000000;
+	text-align:center;
+	padding:27px 10px;
+	text-align: justify;
+}
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+/* styles text on the landmarks page*/
+.caption span.border {
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+/* styles the link */
+.landmarkslink{
+	color: white;
+}
+/*------------------------------------------ World landmarks pages formatting ------------------------------------------*/
+.NiagaraFalls, .StatueOfLiberty, .EiffelTower, .BigBen, .LeaningTowerOfPisa, 
+.GreatWallOfChina, .SydneyOperaHouse, .StBasilsCathedral, .MtKilimanjaro, .TajMahal {
+	position: relative;
+	opacity: 1;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Used on all of the world landmarks pages to push text down from the image*/
+.style3{
+	background-color:rgba(40,46,52, 0) ;
+	color:#FFFFFF;
+	text-align:center;
+	padding: 9.8% 10%;
+	text-align: justify;
+}
+/* Formatting below specifies the images in the parallax scrolling*/
+.NiagaraFalls {
+	background-image: url("Pictures/NiagaraFalls.jpg");
+	min-height: 100%;
+}
+.StatueOfLiberty {
+	background-image: url("Pictures/StatueOfLiberty.jpg");
+	min-height: 100%;
+}
+.EiffelTower {
+	background-image: url("Pictures/EiffelTower.jpg");
+	min-height: 100%;
+}
+.BigBen {
+	background-image: url("Pictures/BigBen.jpg");
+	min-height: 100%;
+}
+.LeaningTowerOfPisa {
+	background-image: url("Pictures/LeaningTowerOfPisa.jpg");
+	min-height: 100%;
+}
+.GreatWallOfChina {
+	background-image: url("Pictures/GreatWallOfChina.jpg");
+	min-height: 100%;
+}
+.SydneyOperaHouse {
+	background-image: url("Pictures/SydneyOperaHouse.jpg");
+	min-height: 100%;
+}
+.StBasilsCathedral {
+	background-image: url("Pictures/StBasilsCathedral.jpg");
+	min-height: 100%;
+}
+.MtKilimanjaro {
+	background-image: url("Pictures/MtKilimanjaro.jpg");
+	min-height: 100%;
+}
+.TajMahal {
+	background-image: url("Pictures/TajMahal.jpg");
+	min-height: 100%;
+}
+/* change image and caption styling in St. Basil's Cathedral Page and Sydney Opera House Page */
+img.OPageImage{
+	margin-left: 30%;
+}
+p.OPageImage{
+	margin-left: 38%;
+	margin-right: 30%;
+	font-size: 24px;
+}
+/*------------------------------------------ Separate landmarks pages ------------------------------------------*/
+/*------------------------------------------ Niagara Falls ------------------------------------------*/
+body.NiagaraFallsPage{
+	background-image: url("Pictures/WaterfallMountain.jpg");
+	background-size: 100%;
+	background-color: #ffcc99;
+}
+/*------------------------------------------ Statue Of Liberty ------------------------------------------*/
+body.StatueOfLibertyPage{
+	background-image: url("Pictures/StatueOfLibertyLowPoly.jpg");
+	background-size: 100%;
+	background-color: #C0C0C0;
+}
+img.SLPageImage{
+	margin-left: 40%;
+}
+p.SLPageImage{
+	margin-left: 37%;
+	margin-right: 30%;
+	font-size: 24px;
+}
+/*------------------------------------------ Eiffel Tower ------------------------------------------*/
+body.EiffelTowerPage{
+	background-image: url("Pictures/EiffelTowerLowPoly.jpg");
+	background-size: 100%;
+	background-color: #FFE4B5;
+}
+/*------------------------------------------ Big Ben ------------------------------------------*/
+body.BigBenPage{
+	background-image: url("Pictures/BigBenPageBackground.jpg");
+	background-size: 100%;
+	background-color: #E6E6FA;
+}
+/*------------------------------------------ Leaning Tower Of Pisa ------------------------------------------*/
+body.LeaningTowerofPisaPage{
+	background-image: url("Pictures/LeaningTowerOfPisaPageBackground.jpg");
+	background-size: 100%;
+	background-color: #8aacb8;
+}
+/*------------------------------------------ Great Wall Of China ------------------------------------------*/
+body.GreatWallofChinaPage{
+	background-image: url("Pictures/GreatWallOfChinaPageBackground.jpg");
+	background-size: 100%;
+	background-color: #b2d8b2;
+}
+dl.GreatWallofChinaList{
+	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+	margin-left: 10%;
+	font-size: 30px;
+}
+/*------------------------------------------ Sydney Opera House ------------------------------------------*/
+body.SydneyOperaHousePage{
+	background-image: url("Pictures/SydneyOperaHousePageBackground.jpg");
+	background-size: 100%;
+	background-color: #c5e3ed;
+}
+/*------------------------------------------ St. Basil's Cathedral ------------------------------------------*/
+body.StBasilsCathedralPage{
+	background-image: url("Pictures/StBasilsCathedralPageBackground.jpg");
+	background-size: 100%;
+	background-color: #e1c8af;
+}
+/*------------------------------------------ Mt. Kilimanjaro ------------------------------------------*/
+body.MtKilimanjaroPage{
+	background-image: url("Pictures/MtKilimanjaroPageBackground.jpg");
+	background-size: 100%;
+	background-color: #e1c8af;
+}
+/*------------------------------------------ Taj Mahal ------------------------------------------*/
+body.TajMahalPage{
+	background-image: url("Pictures/TajMahalPageBackground.jpg");
+	background-size: 100%;
+	background-color: #d2cfcf;
+}
+/*------------------------------------------ References Page ------------------------------------------*/
+body.ReferencesPage{
+	background-image: url("Pictures/Gold.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+	background-color: lightblue;
+}
+h1.ReferencesPage{
+	font-size: 4em;
+	font-weight: 900;
+}
+h2.ReferencesPage{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	text-align: center;
+}
+h3.ReferencesPage{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+p.ReferencesPage{
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 1.5em;
+}
+/*------------------------------------------ Gallery ------------------------------------------*/
+body.Gallery{
+	background-color: lightblue;
+}
+img.Gallery{
+	margin-left: 5%;
+	max-width: 90%;
+}
+table, th, td {
+	border: 1px solid black;
+}
+/*------------------------------------------ Quick Find ------------------------------------------*/
+#quickfindpage{
+	background-color: powderblue
+}
+tbody tr:nth-child(odd) {
+	background-color: #e6e6e6;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #cccccc;
+}
+th {
+	font-size: 1.6em;
+	background-color:  #999999;
+}
+#quickfindtable{
+	font-size: 1.5em;
+	height: 90%;
+	width: 90%; 
+	margin-left: 5%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 25px groove grey;
+	font-family: 'Aclonica', serif;
+	padding: 20px;
+	font-style: italic;
+	caption-side: bottom;
+	text-align: center;
+	letter-spacing: 1px;
+	background-color: #fff;
+}
+/*------------------------------------------ formmats for return to top link ------------------------------------------*/
+a.toplink, a.toplinkdark{
+	color: rgb(60, 60, 60);
+	font-size: 1em;
+	font-variant:small-caps;
+	text-align: center;
+    font-family: 'Aclonica', serif;
+}
+p.toplink, p.toplinkdark{
+	color: black;
+	font-size: 2.5em;
+	font-variant:small-caps;
+	text-align: center;
+	font-family: 'Aclonica', serif;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+a.toplinkdark{
+	color: rgb(200, 200, 200);
+}
+p.toplinkdark{
+	color: white;
+	background-color: transparent;
+}
+/*------------------------------------------ Separate Styling ------------------------------------------*/
+/* add thin border to make horizontal rule effect */
+.horizontalRule{
+	border-bottom: 1px solid #000;
+}
+/* Html 5 and CSS 3 display button/link formats */
+.semantics{
+	margin-top: 2%;
+	margin-left: 46.5%;
+	color: black;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	display: inline-block;
+}
+/* copyright link format */
+.copyright{
+	font-size: 15pt;
+}
+.copyrightdark{
+	font-size: 15pt;
+	color: white;
+}
